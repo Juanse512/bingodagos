@@ -19,3 +19,23 @@ def test_columnas():
                 break
 
     assert contador == 9
+
+def test_menor():
+    carton1 = carton()
+    contador = 0
+    for fila in carton1:
+        for celda in fila:
+            contador = contador + celda
+
+    res = contador < 15
+    assert res == False
+
+def test_mayor():
+    carton1 = carton()
+    contador = 0
+    for fila in carton1:
+        for celda in fila:
+            contador = contador + celda
+
+    res = contador > 15
+    assert res == False
