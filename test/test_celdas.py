@@ -6,7 +6,6 @@ def test_contar_celdas():
     for fila in carton1:
         for celda in fila:
             contador = contador + celda
-
     assert contador == 15
 
 def test_columnas():
