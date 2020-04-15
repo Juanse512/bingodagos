@@ -11,11 +11,11 @@ def test_contar_celdas():
 def test_columnas():
     carton1 = carton()
     contador = 0
-    for x in range(9):
-        for j in range(3):
-            if carton1[j][x] == 1:
-                contador = contador + 1
-                break
+    for x in range(9): #Recorro las filas
+        for j in range(3): #Recorro las columnas
+            if carton1[j][x] == 1: #Si encuentro un carton
+                contador = contador + 1  #Sumo 1 al contador
+                break #Salgo del for y paso a la otra columna
 
     assert contador == 9
 
