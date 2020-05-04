@@ -5,7 +5,8 @@ def test_contar_celdas():
     contador = 0
     for fila in carton1:
         for celda in fila:
-            contador = contador + celda
+            if celda != 0:
+                contador = contador + 1
     assert contador == 15
 
 def test_columnas():
@@ -13,7 +14,7 @@ def test_columnas():
     contador = 0
     for x in range(9): #Recorro las filas
         for j in range(3): #Recorro las columnas
-            if carton1[j][x] == 1: #Si encuentro un carton
+            if carton1[j][x] != 0: #Si encuentro un carton
                 contador = contador + 1  #Sumo 1 al contador
                 break #Salgo del for y paso a la otra columna
 
@@ -24,7 +25,8 @@ def test_menor():
     contador = 0
     for fila in carton1:
         for celda in fila:
-            contador = contador + celda
+            if celda != 0:
+                contador = contador + 1
 
     res = contador < 15
     assert res == False
@@ -34,7 +36,8 @@ def test_mayor():
     contador = 0
     for fila in carton1:
         for celda in fila:
-            contador = contador + celda
+            if celda != 0:
+                contador = contador + 1
 
     res = contador > 15
     assert res == False
