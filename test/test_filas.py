@@ -5,7 +5,7 @@ def test_filas():
     contador = 0
     for x in range(3):
         for j in range(9):
-            if c[x][j] == 1:
+            if c[x][j] != 0:
                 contador = contador + 1
                 break
-    assert contador == 3            
+    assert contador == 3
