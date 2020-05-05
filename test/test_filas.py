@@ -1,11 +1,5 @@
-from src.bingo import carton
+from src import bingo
 
 def test_filas():
-    c = carton()
-    contador = 0
-    for x in range(3):
-        for j in range(9):
-            if c[x][j] != 0:
-                contador = contador + 1
-                break
-    assert contador == 3
+    c = bingo.carton()
+    assert bingo.filas(c)
