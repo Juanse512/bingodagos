@@ -1,11 +1,41 @@
 
 def carton():
     carton = (
-        (1,0,2,3,4,0,5,0,6),
-        (0,7,8,9,0,10,11,12,0),
-        (13,14,0,0,15,0,0,0,0)
+        (1,2,0,3,4,0,5,0,6),
+        (0,7,8,0,0,10,0,12,0),
+        (13,14,0,0,15,0,16,17,0)
     )
     return carton;
+
+def tres_ceros(carton1):
+    check = 0
+    valid = True
+    for columna in range(0,3):
+        for fila in range(0,9):
+            if carton1[columna][fila] == 0:
+                check = check + 1
+            else:
+                check = 0
+            if check >= 3:
+                valid = False
+                break
+        check = 0
+    return valid;
+
+def tres_nums(carton1):
+    check = 0
+    valid = True
+    for columna in range(0,3):
+        for fila in range(0,9):
+            if carton1[columna][fila] != 0:
+                check = check + 1
+            else:
+                check = 0
+            if check >= 3:
+                valid = False
+                break
+        check = 0
+    return valid;
 
 def num_rep(carton1):
     var = [0] * 100

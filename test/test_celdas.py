@@ -11,3 +11,9 @@ def test_menor():
 
 def test_mayor():
     assert bingo.mayor(carton1)
+
+def test_tres_0():
+    assert bingo.tres_ceros(carton1)
+
+def test_tres_nums():
+    assert bingo.tres_nums(carton1)
