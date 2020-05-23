@@ -17,3 +17,6 @@ def test_tres_0():
 
 def test_tres_nums():
     assert bingo.tres_nums(carton1)
+
+def test_tres_por_nueve():
+    assert bingo.tres_x_nueve(carton1)

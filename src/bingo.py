@@ -7,6 +7,21 @@ def carton():
     )
     return carton;
 
+
+def tres_x_nueve(carton1):
+    countx = 0
+    county = 0
+    check = True
+    for columna in carton1:
+        for fila in columna:
+            countx = countx + 1
+        if countx != 9:
+            check = False
+        countx = 0
+        county = county + 1
+    check = check and county == 3
+    return check;
+
 def tres_ceros(carton1):
     check = 0
     valid = True
