@@ -1,3 +1,4 @@
+https://travis-ci.com/Juanse512/bingodagos.svg?branch=master
 # Consignas
 - Escribir un test que valide que el carton no tiene menos de 15 celdas ocupadas y tampoco tiene 
 mas de 15 
