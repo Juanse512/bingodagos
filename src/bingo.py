@@ -1,13 +1,4 @@
 
-def carton():
-    carton = (
-        (1,2,0,3,4,0,5,0,6),
-        (0,7,8,0,0,10,0,12,0),
-        (13,14,0,0,15,0,16,17,0)
-    )
-    return carton;
-
-
 def tres_x_nueve(carton1):
     countx = 0
     county = 0
@@ -122,7 +113,6 @@ def mayor(carton1):
     res = contador > 15
     return res == False
 
-from src.bingo import carton
 
 def fila_menor_derecha(carton1):
     var = 0

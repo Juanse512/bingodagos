@@ -1,6 +1,6 @@
 from src import bingo
-
-carton1 = bingo.carton()
+from src import originar_carton
+carton1 = originar_carton.intentoCarton()
 def test_contar_celdas():
     assert bingo.contar_celdas(carton1)
 

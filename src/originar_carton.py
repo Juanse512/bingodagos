@@ -58,6 +58,3 @@ def imprimirCarton(carton):
         for fila in range(9):
             print(carton[columna][fila], end = " ")
         print('\n')
-
-
-imprimirCarton(intentoCarton())

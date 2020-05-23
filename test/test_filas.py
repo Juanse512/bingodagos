@@ -1,5 +1,5 @@
 from src import bingo
-
+from src import originar_carton
+c = originar_carton.intentoCarton()
 def test_filas():
-    c = bingo.carton()
     assert bingo.filas(c)
