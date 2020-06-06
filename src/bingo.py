@@ -64,7 +64,7 @@ def imprimirCarton(carton):
 def func():
     while(1 > 0):
         carton1 = intentoCarton()
-        if  tres_x_nueve(carton1) == True and  tres_ceros(carton1) == True and  tres_nums(carton1) == True and  num_rep(carton1) == True and  num_menores_arriba(carton1) == True and  uno_noventa(carton1) == True and  contar_celdas(carton1) == True and  columnas(carton1) == True and  menor(carton1) == True and  mayor(carton1) == True and  fila_menor_derecha(carton1) == True and  filas(carton1) == True:
+        if  tres_x_nueve(carton1) == True and  tres_ceros(carton1) == True and  tres_nums(carton1) == True and  num_rep(carton1) == True and  num_menores_arriba(carton1) == True and  uno_noventa(carton1) == True and  contar_celdas(carton1) == True and  columnas(carton1) == True and  menor(carton1) == True and  mayor(carton1) == True and  fila_menor_derecha(carton1) == True and  filas(carton1) == True and diez_en_diez(carton1) == True:
             imprimirCarton(carton1)
             break
     return carton1;
@@ -205,3 +205,17 @@ def filas(c):
                 contador = contador + 1
                 break
     return contador == 3
+
+def diez_en_diez(c):
+    com = 1
+    fin = 9
+    for i in range(9):
+        for j in range(3):
+            if c[j][i] != 0:
+                if c[j][i] < com or c[j][i] > fin:
+                    return False;
+        com = fin + 1
+        fin = fin + 10
+    return True;
+
+func()
