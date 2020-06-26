@@ -1,5 +1,7 @@
 import random
 import math
+from jinja2 import Template
+
 def intentoCarton():
     contador = 0
     carton = (
@@ -64,8 +66,7 @@ def imprimirCarton(carton):
 def func():
     while(1 > 0):
         carton1 = intentoCarton()
-        if  tres_x_nueve(carton1) == True and  tres_ceros(carton1) == True and  tres_nums(carton1) == True and  num_rep(carton1) == True and  num_menores_arriba(carton1) == True and  uno_noventa(carton1) == True and  contar_celdas(carton1) == True and  columnas(carton1) == True and  menor(carton1) == True and  mayor(carton1) == True and  fila_menor_derecha(carton1) == True and  filas(carton1) == True and diez_en_diez(carton1) == True:
-            imprimirCarton(carton1)
+        if  carton_valido(carton1) == True:
             break
     return carton1;
 
@@ -217,5 +218,12 @@ def diez_en_diez(c):
         com = fin + 1
         fin = fin + 10
     return True;
+def carton_valido(carton1):
+    if tres_x_nueve(carton1) == True and tres_ceros(carton1) == True and  tres_nums(carton1) == True and  num_rep(carton1) == True and  num_menores_arriba(carton1) == True and  uno_noventa(carton1) == True and  contar_celdas(carton1) == True and  columnas(carton1) == True and  menor(carton1) == True and  mayor(carton1) == True and  fila_menor_derecha(carton1) == True and  filas(carton1) == True and diez_en_diez(carton1) == True:
+        return True
+    else:
+        return False
 
-func()
+template = Template(open('plantilla.j2').read())
+
+print(template.render(tabla = func()))
