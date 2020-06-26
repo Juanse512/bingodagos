@@ -28,19 +28,14 @@ git clone https://github.com/Juanse512/bingodagos.git
 
 Para ejecutar el código:
 ```
-python src/bingo.py
+python src/bingo.py > salida.html
 ```
+y luego abrir el archivo .html para ver el output
+
 Nota: para distribuciones basadas en Debian utilizar `python3`
 
 Para más información sobre cómo instalar o actualizar Python visite https://www.python.org/
 
 ## Ejemplo de salida
-```
-$ python src/bingo.py 
-0 14 23 0 41 50 0 0 86 
 
-1 0 0 30 48 0 0 79 87 
-
-4 17 0 34 0 57 66 0 0 
-
-```
+![alt text](https://github.com/Juanse512/bingodagos/blob/master/fotos/image.png?raw=true)
