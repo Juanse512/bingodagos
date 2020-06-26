@@ -41,3 +41,5 @@ def test_not_num_menores_arriba():
     assert not(bingo.num_menores_arriba(carton1))
 def test_not_diez_en_diez():
     assert not(bingo.diez_en_diez(carton1))
+def test_not_imprimir_carton():
+    assert not(bingo.imprimirCarton(carton1))
