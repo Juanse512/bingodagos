@@ -54,12 +54,14 @@ def intentoCarton():
     return carton
 
 def imprimirCarton(carton):
-    for columna in range(3):
-        for fila in range(9):
-            print(carton[columna][fila], end = " ")
-        print('\n')
-
-
+    if carton_valido(carton):
+        for columna in range(3):
+            for fila in range(9):
+                print(carton[columna][fila], end = " ")
+            print('\n')
+        return 1
+    else:
+        return 0;
 
 
 
