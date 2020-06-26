@@ -38,4 +38,4 @@ Para más información sobre cómo instalar o actualizar Python visite https://w
 
 ## Ejemplo de salida
 
-![alt text](https://github.com/Juanse512/bingodagos/blob/master/fotos/image.png?raw=true)
+![alt text](https://github.com/Juanse512/bingodagos/blob/master/fotos/image1.png?raw=true)
