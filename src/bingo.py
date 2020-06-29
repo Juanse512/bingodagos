@@ -1,3 +1,5 @@
+import os
+import sys
 import random
 import math
 from jinja2 import Template
@@ -225,7 +227,3 @@ def carton_valido(carton1):
         return True
     else:
         return False
-
-template = Template(open('plantilla.j2').read())
-
-print(template.render(tabla = func()))
