@@ -68,11 +68,11 @@ def imprimirCarton(carton):
 
 
 def func():
-    while(1 > 0):
-        carton1 = intentoCarton()
-        if  carton_valido(carton1) == True:
+    while(True):
+        cartonT = intentoCarton()
+        if  carton_valido(cartonT) == True:
             break
-    return carton1;
+    return cartonT;
 
 
 def tres_x_nueve(carton1):
