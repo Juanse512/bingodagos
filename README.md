@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.com/Juanse512/bingodagos.svg?branch=master)](https://travis-ci.com/Juanse512/bingodagos)
 [![Coverage Status](https://coveralls.io/repos/github/Juanse512/bingodagos/badge.svg)](https://coveralls.io/github/Juanse512/bingodagos)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Juanse512/bingodagos/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Juanse512/bingodagos/?branch=master)
 # Bingo
 
 Código en Python que genera un cartón de bingo.
